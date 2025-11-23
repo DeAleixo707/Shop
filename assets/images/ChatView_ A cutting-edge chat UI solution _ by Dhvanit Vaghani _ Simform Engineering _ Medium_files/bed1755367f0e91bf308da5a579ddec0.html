@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://medium.com/media/bed1755367f0e91bf308da5a579ddec0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>onSendTap.dart – Medium</title><meta name="description" content="You can&#39;t perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session."><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./7e3816627d6dd75033840dba0e0c8520.js.download" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-110350e56c50.css"><div id="gist120263566" class="gist">
+    <div class="gist-file" translate="no" data-color-mode="light" data-light-theme="light">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container">
+  <div id="file-onsendtap-dart" class="file my-2">
+    
+    <div itemprop="text" class="Box-body p-0 blob-wrapper data type-dart  " style="overflow: auto" tabindex="0" role="region" aria-label="onSendTap.dart content, created by DhvanitVaghani on 11:30AM on January 13, 2023.">
+
+        
+<div class="js-check-hidden-unicode js-blob-code-container blob-code-content">
+
+  <template class="js-file-alert-template"></template>
+<template class="js-line-alert-template"></template>
+
+  <table data-hpc="" class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip="" data-tagsearch-path="onSendTap.dart">
+        <tbody><tr>
+          <td id="file-onsendtap-dart-L1" class="blob-num js-line-number js-blob-rnum" data-line-number="1"></td>
+          <td id="file-onsendtap-dart-LC1" class="blob-code blob-code-inner js-file-line">
+</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L2" class="blob-num js-line-number js-blob-rnum" data-line-number="2"></td>
+          <td id="file-onsendtap-dart-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">void</span> <span class="pl-en">onSendTap</span>(<span class="pl-c1">String</span> message, <span class="pl-c1">ReplyMessage</span> replyMessage) {</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L3" class="blob-num js-line-number js-blob-rnum" data-line-number="3"></td>
+          <td id="file-onsendtap-dart-LC3" class="blob-code blob-code-inner js-file-line">  chatController.<span class="pl-en">addMessage</span>(</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L4" class="blob-num js-line-number js-blob-rnum" data-line-number="4"></td>
+          <td id="file-onsendtap-dart-LC4" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">Message</span>(</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L5" class="blob-num js-line-number js-blob-rnum" data-line-number="5"></td>
+          <td id="file-onsendtap-dart-LC5" class="blob-code blob-code-inner js-file-line">      id<span class="pl-k">:</span> id.<span class="pl-en">toString</span>(), <span class="pl-c">// This can be the next message-id if you need to add according to your usecase</span></td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L6" class="blob-num js-line-number js-blob-rnum" data-line-number="6"></td>
+          <td id="file-onsendtap-dart-LC6" class="blob-code blob-code-inner js-file-line">      createdAt<span class="pl-k">:</span> <span class="pl-c1">DateTime</span>.<span class="pl-en">now</span>(),</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L7" class="blob-num js-line-number js-blob-rnum" data-line-number="7"></td>
+          <td id="file-onsendtap-dart-LC7" class="blob-code blob-code-inner js-file-line">      message<span class="pl-k">:</span> message,</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L8" class="blob-num js-line-number js-blob-rnum" data-line-number="8"></td>
+          <td id="file-onsendtap-dart-LC8" class="blob-code blob-code-inner js-file-line">      sendBy<span class="pl-k">:</span> currentUser.id,</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L9" class="blob-num js-line-number js-blob-rnum" data-line-number="9"></td>
+          <td id="file-onsendtap-dart-LC9" class="blob-code blob-code-inner js-file-line">      replyMessage<span class="pl-k">:</span> replyMessage,</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L10" class="blob-num js-line-number js-blob-rnum" data-line-number="10"></td>
+          <td id="file-onsendtap-dart-LC10" class="blob-code blob-code-inner js-file-line">    ),</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L11" class="blob-num js-line-number js-blob-rnum" data-line-number="11"></td>
+          <td id="file-onsendtap-dart-LC11" class="blob-code blob-code-inner js-file-line">  );</td>
+        </tr>
+        <tr>
+          <td id="file-onsendtap-dart-L12" class="blob-num js-line-number js-blob-rnum" data-line-number="12"></td>
+          <td id="file-onsendtap-dart-LC12" class="blob-code blob-code-inner js-file-line">}</td>
+        </tr>
+  </tbody></table>
+</div>
+
+
+    </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/DhvanitVaghani/7e3816627d6dd75033840dba0e0c8520/raw/cfeb44aa678ecde616fbbc60c1a57924a9208c2b/onSendTap.dart" style="float:right" class="Link--inTextBlock">view raw</a>
+        <a href="https://gist.github.com/DhvanitVaghani/7e3816627d6dd75033840dba0e0c8520#file-onsendtap-dart" class="Link--inTextBlock">
+          onSendTap.dart
+        </a>
+        hosted with ❤ by <a class="Link--inTextBlock" href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200; if (document) {document.domain = document.domain;}function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height);var elements = document.getElementsByClassName("gist-data"); for (var i = 0; i < elements.length; i++) {elements[i].style.overflow = "visible"}resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {try {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);} catch(error) {console.log('maybeResize error: ', error)}}maybeResize();</script><script defer="" src="./vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;962f0ba9fc8e4ed8&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.7.0&quot;,&quot;token&quot;:&quot;0b5f665943484354a59c39c6833f7078&quot;}" crossorigin="anonymous"></script>
+</body></html>
